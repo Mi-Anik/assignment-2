@@ -129,3 +129,56 @@ footer styleshit
     border-radius: 50%;
     margin-left: 10px;
 }
+
+
+/*------------
+ media quary
+-------------- */
+
+/* mobaile screen */
+@media only screen and (max-width:688px){
+    body, main{
+        width: 100%;
+    }
+    .navigation, .containers, .blogs {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .containers{
+        margin-left: 50px;
+    }
+    .container-title{
+        font-size: 14px;
+        align-items: center;
+    }
+    .container-img{
+        width: 100%;
+    }
+    header, main, footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-section{
+        max-width: 550px;
+    }
+
+}
+/* table screen */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .navigation, .containers, .blogs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .containers{
+        margin-left: 100px;
+    }
+    header, main, footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-section{
+        max-width: 850px;
+    }
+}
